@@ -1,0 +1,424 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 85%;
+  margin: 0 auto;
+  white-space: pre-wrap;
+}
+
+body {
+  min-height: 100vh;
+  min-block-size: 100%;
+  background-color: black;
+  color: white;
+  line-height: 1.6rem;
+  /* margin-bottom: 200px; */
+  font-family: "Josefin Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  border-bottom: solid 1 px white;
+  padding: 20px 0;
+  align-items: center;
+  position: sticky;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  background-color: black;
+}
+
+/* .divider {
+    width: 100%;
+    height: 1px;
+    background-color: white;
+  } */
+
+.love-note {
+  margin: 20px 0;
+}
+
+.title {
+  background-color: lightgrey;
+  color: black;
+  padding: 5px 5px;
+  display: inline-block;
+  font-size: 600;
+  font-style: normal;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+
+.love-note h3,
+h4 {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.content {
+  text-align: justify;
+}
+
+.salutation {
+  padding-bottom: 10px;
+  font-style: italic;
+  font-family: "Lobster Two", cursive;
+}
+
+.signature {
+  padding-top: 10px;
+  font-family: "Lobster Two", cursive;
+}
+
+.photo-section {
+  margin: 50px 0;
+}
+
+.carousel {
+  height: 400px;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.carousel-container {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  max-width: 300px;
+}
+
+.photo-holder {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.comment-photo-holder {
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+.comment-photo-holder img {
+  max-height: auto;
+  max-width: 100%;
+}
+
+.photo-holder img {
+  /* height: inherit; */
+  max-height: auto;
+  max-width: 100%;
+}
+
+.photos {
+  /* margin-top: 20px; */
+}
+
+.arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.subtext {
+  text-align: center;
+  font-style: italic;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border: white solid 1px;
+
+  outline: none;
+  /* border-radius: 10px; */
+}
+
+input {
+  background-color: black;
+  outline: none;
+  border: none;
+  /* border-radius: 10px; */
+  padding: 10px 0;
+  padding-left: 10px;
+}
+
+input::placeholder {
+  color: white;
+}
+input[type="text"] {
+  background-color: black;
+}
+
+input:focus {
+  color: white;
+}
+.password-boolean span {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.theme {
+  height: 30px;
+  width: 30px;
+}
+
+.theme img {
+  height: 30px;
+  width: 30px;
+}
+
+.password-validation {
+  color: red;
+}
+
+.dear-nkem {
+  margin: 50px 0;
+}
+
+.letters {
+  background-color: white;
+  color: black;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+
+.view-letters {
+  margin-bottom: 20px;
+}
+
+button {
+  /* border-radius: 10px; */
+  padding: 10px 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.hide-letter {
+  background-color: black;
+  color: white;
+  padding: 5px 5px;
+  cursor: pointer;
+  display: inline-block;
+  /* margin-top: 20px; */
+}
+
+.playlist-section {
+  margin: 50px 0;
+}
+
+.playlist {
+  margin-top: 20px;
+}
+
+.describe-nkem {
+  margin: 50px 0;
+}
+
+.describe-nkem span {
+  color: white;
+}
+
+.name {
+  font-weight: bold;
+  font-family: "Lobster Two", cursive;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  min-height: 350px;
+  height: auto;
+  margin-top: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  color: black;
+  text-align: center;
+  position: relative;
+}
+
+.comment-container {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.comment-container .comment-holder {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: visible;
+  padding: 0 40px;
+  overflow-y: scroll;
+}
+
+.comment-container .comment-holder .comment {
+  font-size: 14px;
+}
+
+.comment-container .comment-arrows {
+  position: absolute;
+  margin: auto 0;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  opacity: 0.3;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.overlay {
+  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lobster Two", cursive;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 6rem;
+  color: white;
+  /* opacity: 0.8; */
+  background-color: #dcb694;
+}
+
+.overlay h3 {
+  z-index: 100;
+  position: absolute;
+}
+
+.salutation-hide-letter {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body.bright {
+  background-color: white;
+}
+
+.bright nav {
+  background-color: white;
+  color: black;
+}
+
+.bright .divider {
+  background-color: black;
+}
+
+.App.bright {
+  color: black;
+}
+
+.App.bright .container {
+  background-color: #dcb694;
+  color: white;
+}
+
+.App.bright .comment-container {
+  background-color: #dcb694;
+}
+
+.App.bright .container p {
+  color: white;
+}
+
+.App.bright .letters {
+  background-color: lightgrey;
+  color: black;
+}
+
+.App.bright button {
+  background: #dcb694;
+  color: white;
+  font-weight: bold;
+}
+
+.App.bright input {
+  background-color: white;
+}
+
+.App.bright .password-container {
+  background-color: white;
+  border: #dcb694 solid 1px;
+}
+
+.App.bright input::placeholder {
+  color: black;
+}
+.App.bright input[type="text"] {
+  background-color: white;
+}
+
+.App.bright input:focus {
+  color: black;
+}
+
+.App.bright .title {
+  background-color: #dcb694;
+  color: white;
+}
+
+.desktop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
